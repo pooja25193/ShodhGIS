@@ -1,0 +1,177 @@
+{"intents": [	
+        {"tag": "noresponse",
+         "patterns": ["bbbb", "jdbjcb", "elan musk","what is india", "what is world"],
+         "responses": ["Sorry i dont know","You must ask the right questions","I am learning"]         
+        },    	
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"]
+        },
+        {"tag": "age",
+         "patterns": ["how old", "how old is tim", "what is your age", "how old are you", "age?"],
+         "responses": ["I am 1 month old!", "1 month young!"]
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?"],
+         "responses": ["You can call GISbot.", "I'm GISbot!", "I'm GISbot aka GIS ChatBot."]
+        },        
+        {"tag": "hours",
+         "patterns": ["when are you guys open", "what are your hours", "hours of operation"],
+         "responses": ["We are open 9am-7pm Monday-Friday!"]
+        },
+    	{"tag": "GIS",
+         "patterns": [" What is fullform of GIS?", "What is GIS", "What does GIS do?"],
+         "responses": ["GIS stands for Geographic Information Systems.", "A geographic information system (GIS) is a system that creates, manages, analyzes, and maps all types of data.", " GIS connects data to a map"]
+        },
+        {"tag": "ArcGIS",
+         "patterns": ["What is ArcGIS?", "What is ArcGIS used for?"],
+         "responses": ["ArcGIS is a geographic information system (GIS) ", "ArcGIS is a family of client software"]
+        },	
+        {"tag": "Geocoding",
+         "patterns": [" What is geocoding?", "what does geocoding do?"],
+         "responses": ["It converts address into spatial data and associates the exact geographical coordinates for that address.", "Address geocoding, or simply geocoding, is the process of taking a text-based description of a location, such as an address or the name of a place, and returning geographic coordinates, frequently latitude/longitude pair, to identify a location on the Earth's surface.", "https://en.wikipedia.org/wiki/Address_geocoding"]
+        },
+        {"tag": "Reverse Geocoding",
+         "patterns": [" What is reverse geocoding?", "what does reverse geocoding do?"],
+         "responses": ["when a GPS coordinate is entered the street address is interpolated from a range assigned to the road segment in a reference dataset that the point is nearest to.", "Reverse geocoding is the process of converting a location as described by geographic coordinates to a human-readable address or place name. It is the opposite of forward geocoding, hence the term reverse."]
+        },
+        {"tag": "Digitization",
+         "patterns": [" What is the digitizing process?", "What is digitization?"],
+         "responses": ["Digitizing in GIS is the process of converting geographic data either from a hardcopy or a scanned image into vector data by tracing the features.", "Digitization is the process of converting information into a digital format"]
+        },
+        {"tag": "Point Geometry",
+         "patterns": ["What is Point feature", "What is a point in GIS"],
+         "responses": ["A point feature is a GIS object that stores its geographic representation—an X and Y coordinate pair", "A PointGeometry object is a shape that has neither length nor area at a given scale and is a 0-dimensional object."]
+        },
+        {"tag": "Line Geometry",
+         "patterns": ["What is Line Geomtery?", "What is Line in GIS", "hours of operation"],
+         "responses": ["Lines are used to represent the shape and location of geographic objects, such as street centerlines and streams, too narrow to depict as areas. Lines are also used to represent features that have length but no area, such as contour lines and boundaries.", "A line is formed by connecting two data points. A computer reads this line as straight, and renders the line as a vector connecting two x-y coordinates."]
+        },
+        {"tag": "Polygon Geometry",
+         "patterns": ["what is Polygon Geometry", "What is Polygon in GIS"],
+         "responses": ["Polygons are used to represent areas such as the boundary of a city (on a large scale map), lake, or forest. ", "A polygon is defined as a figure with three or more sides, and lying on one plane."]
+        },
+        {"tag": "pixel",
+         "patterns": ["What is pixel?", "What pixel means?"],
+         "responses": ["A pixel is one of the small dots or squares that make up an image on a computer screen. The more pixels there are, the more the image looks real or accurate.","picture x element"]
+        },
+        {"tag": "TIFF",
+         "patterns": ["What is TIFF?", "Tag image File Format"],
+         "responses": ["Tag Image File Format, abbreviated TIFF or TIF, is a computer file format for storing raster graphics images", "TIFF file uses the file extension .tif or .tiff. TIFF is also known for its flexibility and has more features and capabilities than other image file formats."]
+        },
+        {"tag": "Raster Data",
+         "patterns": ["Raster Data", "Formats of Raster Data"],
+         "responses": ["A raster consists of a matrix of cells (or pixels) organized into rows and columns (or a grid) where each cell contains a value representing information, such as temperature.","JPEG, PNG, JIF, MrSID"]
+        },
+        {"tag": "Vector Data",
+         "patterns": ["Vector Data", "Format of Vector Data"],
+         "responses": [" Vectors are composed of discrete geometric locations (x, y values) known as vertices that define the shape of the spatial object. The organization of the vertices determines the type of vector that we are working with: point, line or polygon.","SHP, GDB, , GeoJSON", "KML"]
+        },
+        {"tag": "sliver polygons?",
+         "patterns": ["What are Sliver Polygons", "Sliver Polygons"],
+         "responses": ["Sliver Polygons are small areas which result from spatial overlays of different GIS layers. Typically, sliver polygons occur if slightly different digitalized areas are spatially intersected.", "Polygon slivers can occur during extraction when small, thin polygons are accidentally created through an overlap with existing features."]
+        },
+        {"tag": "KML",
+         "patterns": ["What is KML", "KML"],
+         "responses": ["Keyhole Markup Language is an XML notation for expressing geographic annotation and visualization within two-dimensional maps and three-dimensional Earth browsers.", "Keyhole Markup Language (KML) is an XML-based format for storing geographic data and associated content and is an official Open Geospatial Consortium (OGC) standard."]
+        },
+        {"tag": "GeoJSON",
+         "patterns": ["What is GeoJSON", "Is GeoJSON a JSON"],
+         "responses": ["GeoJSON is an open standard format designed for representing simple geographical features, along with their non-spatial attributes. It is based on the JSON format. The features include points, line strings, polygons, and multi-part collections of these types.", "GeoJSON is a text-based format written in JavaScript Object Notation (JSON) that is sometimes used for interchange of vector data, drawings."]
+        },        
+        {"tag": "FME",
+         "patterns": ["What is FME?", "Is FME ETL?"],
+         "responses": ["FME (originally, the Feature Manipulation Engine) was designed to overcome many of the problems associated with traditional translation methods. Traditionally the software used to translate data to a different format had limited capabilities. Most of the data would be forced through a limited data model causing much of the meaning to be lost in translation. We call this a thin-pipe translation.", "ETL (Extract, Transform and Load) can be described as a data warehousing tool that extracts data from a source, transforms it to fit the users’ needs, and then loads it into a destination or data warehouse. FME was the first tool designed to be a spatial ETL application, focusing on translation of geographic data. Today, FME's ETL capabilities cover many different kinds of data, both spatial and non-spatial."]
+        },
+	{"tag": "ArcFM",
+         "patterns": ["ArcFM Login Code Sample", "Login Code Sample"],
+         "responses": ["Click here: <a href=\"//onehungrymind.com/angularjs-dynamic-templates\" target=\"_blank\"><u>click me</u></a>", "Hi! Please view this link: <a href='www.examplelink.com'>www.examplelink.com</a>"],	
+         "context_set": ""
+        },
+	{"tag": "pyshp",
+         "patterns": ["What is pyshp","how pyshp is used","pyshp"],
+         "responses": ["It is a python shapefile library","It is specifically used to read and write shapefiles.It can be downloaded using ‘pip install pyshp’","Elaborate detail can be obtained here: https://pypi.org/project/pyshp/"]
+        },
+	{"tag": "pie diagram",
+         "patterns": ["How to display pie diagram on 3D image in Arcgis","pie diagram in Arcgis","display 3D image?"],
+         "responses": ["This links might be useful:https://doc.arcgis.com/en/insights/latest/create/pie-chart-symbols.htm","This links might be useful:https://www.youtube.com/watch?v=YEP8EV6OIA0","Check here:https://www.youtube.com/watch?v=2hodQp9yAZM"]
+        },
+	{"tag": "Fire risk",
+         "patterns": ["How can we validate a fire risk model using Monte carlo simulation","I am working on forest fire risk of emission where we used static variables of interest In GIS (slope , climate, vegetation, fire intensity) fire frequency is included in the model","How to use Monte Carlo simulation in ArcGIS or any software to validate the Model"],
+         "responses": ["The very basic idea of Monte Carlo simulation is to use a random number generator of a certain statistical model and with a specified set of parameters that belong to this model","The very basic idea of Monte Carlo simulation is to use a random number generator of a certain statistical model and with a specified set of parameters that belong to this model. As such, you need your variables either one by one or in combination and set their values and compute your output (can easily be done in MATLAB), then you export the output to your GIS software."]
+        },
+	{"tag": "time series",
+         "patterns": ["Which machine learning algorithm is suitable for remote sensing (time series) explanation","I want to work on satellite images on 16 days basis on a particular area then draw the difference among the pixel values and views those results on the time series explanation."],
+         "responses": ["Cellular automata algorithms are working with pixels natively. You just map pixels from your pictures into a lattice of given size. Each pixel represe to a channel where a time series occur. It is possible to measure the evolution of the whole regions.It would be advisable to use the complexity measures based on entropy as is described in our paper on prediction of ventricular & Torsades de Pointes arrhythmia. This paper is made as a methodology one. Can be applied in your field to.","Prediction of the evolution is based on applying of AI methods (SVM, logistic regression, batching, etc.)"]
+        },
+	{"tag": "LULC",
+         "patterns": ["Which bands are most suitable in Landsat 8 satellite image for land use land cover classification","Landsat 8 for LULC","land use land cover using landsat","lulc classification"],
+         "responses": [". band 4, 5, 6 is the best three-band combination and band 1, 2, 5, 7 is the best four-band combination which achieved almost identical performance as using all bands for LULC classification","Landsat band 4,5,6 for three band and Landsat 1, 2, 5, 7 is the best four-band combination"]
+        },
+	{"tag": "Hazard Indicator",
+         "patterns": ["How can I develop a hazard indicator map through ArcGIS","hazard indicator map"],
+         "responses": ["Hazard indicators include Cyclone frequency, storm surge, wave, sea level rise.These parameters are generated in individual data from different sources. Weighted overlay analysis or AHP method can be used to develop hazard indicators","Weighted overlay analysis or AHP method can be used to develop hazard indicators"]
+        },
+	{"tag": "NDVI and LST",
+         "patterns": ["How to get correlation and scatter diagram between NDVI and LST in ArcGIS","correlation diagram between NDVI and LST"],
+         "responses": ["You can do it by using ArcMap and excel.1)Random point generation or fishnet for grid base point generation,2)Extract values to points,3)correlation analysis in ArcMap or Excel","Follow these steps using ArcGIS and Excel 1)Random point generation or fishnet for grid base point generation,2)Extract values to points,3)correlation analysis in ArcMap or Excel"]
+        },
+	{"tag": "hazard susceptibility",
+         "patterns": ["Where can we get a tool that performs the frequency ratio model for hazard susceptibility in ArcGIS","I am in search for a user-friendly toolbox in ArcGIS that can perform the frequency ratio model for flood susceptibility"],
+         "responses": ["We usually undertake frequency studies using a whole bunch of tools. Frequency analysis is mostly carried out within general modelling tools, from the simplest (excel, open office calc) to more advanced (octave, MATLAB, and many other general or specific statistical package) or even directly coding our own preferred solution (python, within Spyder or any other IDE is most common nowadays). The thing is, you must understand your data, and then fit your data to a model. Mapping usually requires some further modelling outside GIS, such as HEC-RAS, IBER, Mike... ArcGIS (or QGIS or any other GIS-software) usually comes to play when you already have your flood-prone areas, so you may continue performing further spatial analysis. If your approach is not quantitative, but qualitative, you may need to define your own method, but there is already a whole written about how to undertake flood hazard studies (including the qualitative or susceptibility approaches). Even so, GIS may not be the right tool for the whole job.","Frequency analysis is mostly carried out within general modelling tools, from the simplest (excel, open office calc) to more advanced (octave, MATLAB, and many other general or specific statistical package) or even directly coding our own preferred solution (python, within Spyder or any other IDE is most common nowadays)"]
+        },
+	{"tag": "coordinate systems",
+         "patterns": ["How does ArcGIS pro handle the different coordinate systems on the same map","Does ArcGIS is making all the needed conversions automatically to project all the features on the map correctly"],
+         "responses": ["One of the great convenience features of ArcGIS (both Pro and Desktop) is that they project-on-the-fly, meaning that they perform automatic real-time reprojection of your data.","Yes and no. One of the great convenience features of ArcGIS (both Pro and Desktop) is that they project-on-the-fly, meaning that they perform automatic real-time reprojection of your data. Once a projection is assigned to the dataframe (either by adding the first data layer or by manually setting a projection), any subsequent layer that is added is displayed in that projection. In that sense, the answer to your question is yes. There are a couple of important caveats because the real-time projection is not perfect. In some cases, the layers won't line up exactly on the screen. I think this usually happens when the layers are not just in a different projection, but also have a different datum. You will usually only notice this if the two layers have common features, and you zoom in very close (the error will typically be sub-meter). Because of these minor discrepancies, there are a few best practices:1) Never edit a layer that is in a different projection than the dataframe (you should get a warning if you try to do this),2)Never use layers that are in different projections as clip features (or similar editing and geoprocessing tasks) for each other,3)Don't rely on spatial calculations (e.g. area) on layers that aren't in the current projection,4)By the same logic as #3, ArcGIS will let you take measurements and do calculations on unprojected data (GCS coordinate system), but these will almost always have substantial errors. This is true even if the dataframe is set to a GCS coordinate system as the projection"]
+        },
+	{"tag": "API RP 581",
+         "patterns": ["What is API RP 581","API RP 581"],
+         "responses": ["It is a risk based inspection and it is measured quantitatively based on pipeline history and condition","It is a risk based inspection and it is measured quantitatively based on pipeline history and condition.It will help the pipe line operators to predict the pipeline condition And helping them in predicting risk based on (Risk of failure = Probability of failure * consequence of failure). Probability of failures may happen with any of the following.1)Incorrect operation,2)External corrosion,3)Internal corrosion,4)Threat,5)Pipe defects like crack, dent etc. Based on history, pipeline operators will give the ranking to the failing causes and assess the pipeline condition and mitigation plans will be prepared based on several inputs."]
+        },
+	{"tag": "import csv",
+         "patterns": ["How to import users in csv from portal along with their groups","import users in csv from portal"],
+         "responses": ["https://community.esri.com/t5/arcgis-enterprise-portal/how-to-export-group-members-in-portal-to-csv-file/td-p/621282","https://community.esri.com/t5/arcgis-enterprise-portal/how-to-export-group-members-in-portal-to-csv-file/td-p/621282. Can also be achieved using Admin Tools for ArcGIS Online"]
+        },
+	{"tag": "transform gis data",
+         "patterns": ["Python libraries to transform GIS data without using ArcMap software","python libraries to transform GIS data"],
+         "responses": ["Fiona and GeoPandas", "Fiona and GeoPandas are used for reading GDB files, Shapefiles, layers, GeoJsons,also perform tasks such as coordinates transformation, changing projections, adding Geodetic Coordinate system, conversion of files from 1 GIS format to another."]
+        },
+	{"tag": "open geojson",
+         "patterns": ["How to open GeoJson files in ArcMap or ArcGIS","open GeoJson files in ArcMap"],
+         "responses": ["It can be done by following the steps given in the following Link: https://opengislab.com/blog/2018/11/8/adding-and-viewing-geojson-in-qgis-and-arcgis#:~:text=Just%20click%20the%20Open%20Data,%3E%20URI%20path%20%3E%3E%20Add.&text=ArcGIS%20desktop%20and%20Pro%20can,need%20the%20data%20interoperability%20extension","It can be done by following the steps given in the following Link(Data Interoperability Extension is required): https://opengislab.com/blog/2018/11/8/adding-and-viewing-geojson-in-qgis-and-arcgis#:~:text=Just%20click%20the%20Open%20Data,%3E%20URI%20path%20%3E%3E%20Add.&text=ArcGIS%20desktop%20and%20Pro%20can,need%20the%20data%20interoperability%20extension"]
+        },
+	{"tag": "python GIS",
+         "patterns": ["Different Python libraries used for gis tasks","python libraries for GIS"],
+         "responses": ["ArcPy, Geopandas, GDAL/OGR, RSGISLib, PyProj","ArcPy, Geopandas, GDAL/OGR, RSGISLib, PyProj. For more details, please refer this link: https://gisgeography.com/python-libraries-gis-mapping/"]
+        },
+	{"tag": "datascience libraries",
+         "patterns": ["Python libraries required for basic datascience activities","datascience libraries"],
+         "responses": ["NumPy, Pandas, Matplotlib, Scikit, Re, ReportLab, ipyleaflet, Folium, Geemap, LiDAR these are mainly used for datascience","NumPy, Pandas, Matplotlib, Scikit, Re, ReportLab, ipyleaflet, Folium, Geemap, LiDAR.For more details, please refer this link: https://gisgeography.com/python-libraries-gis-mapping/"]
+        },
+	{"tag": "geometry column",
+         "patterns": ["How can we get X, Y, Z and M values from geometry column of a feature class into separate individual columns"],
+         "responses": ["It can be done using ‘Feature Vertices to Points’ tool in Data Management Toolbox present in ArcMap",". Steps given in the following URL can be performed to achieve the task: https://support.esri.com/en/technical-article/000011691"]
+        },
+	{"tag": "raster to vector",
+         "patterns": ["How can you transform a Raster Data into Vector","transform a Raster Data into Vector"],
+         "responses": ["It can be performed using Georeferencing. Following steps can be performed for the same:https://desktop.arcgis.com/en/arcmap/10.3/manage-data/raster-and-images/georeferencing-a-raster-to-a-vector.htm","Performed using Georeferencing"]
+        },
+    {"tag": "hello",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"]         
+        }
+
+
+
+
+
+
+
+	
+   ]
+}
+
+
+
+
+
