@@ -1,2 +1,5 @@
-Flask
-
+Flask==1.1.2
+nltk==3.6.3
+numpy==1.19.5
+keras==2.6.0
+Keras-Preprocessing==1.1.2
